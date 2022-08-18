@@ -1,33 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./develop/assets/images/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./develop/assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./develop/css/styles.css" />
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+
   
-<link rel="stylesheet" href="./develop/css/styles.css" />  <title>Frontend Mentor | Base Apparel coming soon page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+  Email Address -->
+    <main class="main">
+      <section class="coming-soon-page">
+        <div class="logo_wrapper">
+          <img
+            src="./develop/assets/images/logo.svg"
+            alt="logo for base apparel brand"
+          />
+        </div>
 
-  We're coming soon
+        <div class="coming-soon-page-content">
+          <h1 class="coming-soon-page__header">We're coming soon</h1>
 
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
+          <p class="coming-soon-page__text">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+        </div>
 
-  Email Address
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Daniel Arzanipour</a>.
-    </p>
-  </footer>
-</body>
+        <form class="coming-soon-page__form">
+          <div class="form-control">
+            <label class="sr-only" for="email">Email</label>
+            <input type="text" id="email" placeholder="Email Address" />
+            <button type="submit" class="btn btn--pink">
+              <svg aria-hidden="true" focusable="false">
+                <use
+                  xlink:href="./develop/assets/images/sprite.svg#icon-arrow"
+                ></use>
+              </svg>
+              <span class="sr-only">Submit Button</span>
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Daniel Arzanipour</a>.
+      </p>
+    </footer>
+  </body>
 </html>
