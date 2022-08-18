@@ -105,9 +105,6 @@ body {
   font-weight: var(--fw-regular);
 }
 
-.main {
-}
-
 .btn {
   border: none;
   border-radius: 2rem;
@@ -135,12 +132,6 @@ body {
 /**------------------- 
 **       HERO
 --------------------*/
-.hero {
-}
-
-.hero > picture {
-}
-
 .hero > picture > img {
   width: clamp(23ch, 100%, 145ch);
 }
@@ -221,4 +212,40 @@ body {
 .btn--pink > svg {
   width: 1.25rem;
   height: 1.25rem;
+}
+
+/**------------------- 
+**      LAYOUT
+--------------------*/
+@media only screen and (min-width: 48em) {
+  .coming-soon-page {
+    display: grid;
+    /* grid-template-columns: 70% 30%; */
+    grid-template-rows: 1fr 1fr 1fr;
+
+    width: clamp(23ch, 100%, 145ch);
+    /* min-width: 800px; */
+  }
+
+  .logo_wrapper {
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+
+  .hero {
+    grid-column: 2/3;
+    grid-row: 1/-1;
+  }
+
+  .coming-soon-page-content {
+    grid-column: 1/1;
+    grid-row: 2/3;
+    /* align-self: center; */
+  }
+
+  .coming-soon-page__form {
+    grid-column: 1/1;
+    grid-row: 3/4;
+    /* align-self: end; */
+  }
 }
