@@ -59,14 +59,24 @@ select {
 --------------------*/
 :root {
   /* COLOURS */
+  --clr-de-saturated-red: 0, 36%, 70%;
+  --clr-soft-red: 0, 93%, 68%;
+
+  --clr-dark-grayish-red: 0, 6%, 24%;
+
+  --clr-gradient-primary: 135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%);
+  --clr-gradient-secondary: 135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%);
 
   /* FONT FAMILY */
+  --ff-josefin-sans: 'Josefin Sans', sans-serif;
 
   /* FONT SIZE */
+  --ff-default: 1rem;
 
   /* FONT WEIGHT */
-
-  /* BREAKPOINTS */
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-semi-bold: 600;
 }
 
 /**------------------- 
@@ -88,6 +98,9 @@ select {
 **     GENERAL
 --------------------*/
 body {
+  font-family: var(--ff-josefin-sans);
+  font-size: var(--ff-default);
+  font-weight: var(--fw-regular);
 }
 
 .main {
@@ -97,4 +110,55 @@ body {
 
   width: 100vw;
   min-height: 100vh;
+}
+
+.btn {
+}
+
+/**---------------------- 
+** COMING SOON SECTION
+-----------------------*/
+.coming-soon-page {
+}
+
+/**------------------- 
+**      LOGO
+--------------------*/
+.logo_wrapper {
+}
+
+/**------------------- 
+**       HERO
+--------------------*/
+.hero {
+}
+
+.hero > picture {
+}
+
+/**------------------- 
+**     CONTENT
+--------------------*/
+.coming-soon-page-content {
+}
+
+.coming-soon-page__header {
+}
+
+.coming-soon-page__text {
+}
+
+/**------------------- 
+**       FORM
+--------------------*/
+.coming-soon-page__form {
+}
+
+.form-control {
+}
+
+.email {
+}
+
+.btn--pink {
 }
