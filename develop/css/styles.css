@@ -134,6 +134,12 @@ body {
   margin: 0 auto;
 }
 
+@media only screen and (min-width: 48em) {
+  .coming-soon-page {
+    background-image: url(../assets/images/bg-pattern-desktop.svg);
+  }
+}
+
 /**------------------- 
 **      LOGO
 --------------------*/
@@ -215,6 +221,11 @@ body {
   .coming-soon-page__header {
     font-size: 3.875rem;
     line-height: 4.5rem;
+  }
+
+  .coming-soon-page__text {
+    font-size: 1.2rem;
+    line-height: 2.063rem;
   }
 }
 
@@ -323,6 +334,6 @@ body {
 
   .coming-soon-page__form {
     grid-column: 2/6;
-    grid-row: 10/11;
+    grid-row: 11/12;
   }
 }
