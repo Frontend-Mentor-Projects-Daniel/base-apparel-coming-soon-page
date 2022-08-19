@@ -61,23 +61,26 @@
           </p>
         </div>
 
-        <form class="coming-soon-page__form">
+        <form class="coming-soon-page__form" data-form-main>
           <div class="form-control">
             <label class="sr-only" for="email">Email</label>
             <input
+              data-input-email
               class="email"
               type="text"
               id="email"
               placeholder="Email Address"
             />
-            <div class="error-icon hide">
+            <div data-error-icon class="error-icon hide">
               <svg>
                 <use
                   xlink:href="./develop/assets/images/sprite.svg#icon-error"
                 ></use>
               </svg>
             </div>
-            <span class="error-text hide">Please provide a valid email</span>
+            <span data-error-text class="error-text hide"
+              >Please provide a valid email</span
+            >
             <button type="submit" class="btn btn--pink">
               <svg aria-hidden="true" focusable="false">
                 <use
