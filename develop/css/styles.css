@@ -96,6 +96,14 @@ select {
   border: 0 !important;
 }
 
+.error {
+  outline: 1px solid red;
+}
+
+.hide {
+  display: none;
+}
+
 /**------------------- 
 **     GENERAL
 --------------------*/
@@ -152,7 +160,6 @@ body {
 @media only screen and (min-width: 48em) {
   .hero {
     background-image: url(../assets/images/hero-desktop.jpg);
-    /* background-size: 100%; */
     background-position: center;
     height: 100vh;
   }
@@ -227,6 +234,7 @@ body {
   border-radius: 2rem;
   box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
 
+  margin-bottom: 0.5rem;
   padding: 1rem;
   width: 100%;
 }
@@ -238,7 +246,7 @@ body {
 .btn--pink {
   position: absolute;
   top: -2%;
-  right: 0;
+  right: -2%;
 
   display: flex;
   align-items: center;
@@ -264,9 +272,30 @@ body {
 }
 
 /**------------------- 
+**     ERRORS
+--------------------*/
+.error-icon {
+  position: absolute;
+  top: 0.875rem;
+  right: 6.125rem;
+
+  height: 1.5625rem;
+  width: 1.5625rem;
+}
+
+.error-icon > svg {
+  height: 100%;
+  width: 100%;
+}
+
+.error-text {
+  color: red;
+  font-size: 0.8125rem;
+}
+
+/**------------------- 
 **      LAYOUT
 --------------------*/
-/* tablet */
 @media only screen and (min-width: 48em) {
   .coming-soon-page {
     display: grid;
