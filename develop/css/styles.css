@@ -47,7 +47,9 @@ select {
   *,
   *::before,
   *::after {
+    -webkit-animation-duration: 0.01ms \!important;
     animation-duration: 0.01ms \!important;
+    -webkit-animation-iteration-count: 1 \!important;
     animation-iteration-count: 1 \!important;
     transition-duration: 0.01ms \!important;
     scroll-behavior: auto \!important;
@@ -248,6 +250,22 @@ body {
   margin-bottom: 0.5rem;
   padding: 1rem;
   width: 100%;
+}
+
+.email::-webkit-input-placeholder {
+  color: hsl(var(--clr-de-saturated-red));
+}
+
+.email::-moz-placeholder {
+  color: hsl(var(--clr-de-saturated-red));
+}
+
+.email:-ms-input-placeholder {
+  color: hsl(var(--clr-de-saturated-red));
+}
+
+.email::-ms-input-placeholder {
+  color: hsl(var(--clr-de-saturated-red));
 }
 
 .email::placeholder {
